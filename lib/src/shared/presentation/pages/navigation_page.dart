@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 class NavigationPage extends StatefulWidget {
   final StatefulNavigationShell navigationShell;
   final GlobalKey<ScaffoldState> scaffoldKey;
-  NavigationPage({super.key, required this.navigationShell, required this.scaffoldKey});
+  const NavigationPage({super.key, required this.navigationShell, required this.scaffoldKey});
   
 
   @override
