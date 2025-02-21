@@ -30,7 +30,6 @@ class CardWelcome extends StatelessWidget {
             Expanded(
               child: Text(
                 "Introducing the Mobile Community application",
-                style: TextStyle(),
                 maxLines: 3,
               ),
             ),

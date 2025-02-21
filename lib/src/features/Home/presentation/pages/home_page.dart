@@ -34,7 +34,13 @@ class HomePage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             CardWelcome(),
-            Text("Feature"),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Text(
+                "Feature",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+              ),
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
