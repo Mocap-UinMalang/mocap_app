@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mocap_app/src/core/router/app_route_enum.dart';
+import 'package:mocap_app/src/features/Home/presentation/pages/home_page.dart';
 import 'package:mocap_app/src/shared/presentation/pages/navigation_page.dart';
 
 /*
@@ -93,9 +94,7 @@ class AppRouter {
                 path: AppRouteEnum.home.path,
                 name: AppRouteEnum.home.name,
                 pageBuilder:
-                    (context, state) => NoTransitionPage(
-                      child: Container(),
-                    ), //TODO Change Page (home)!
+                    (context, state) => NoTransitionPage(child: HomePage()),
                 routes: [
                   GoRoute(
                     parentNavigatorKey: _rootNavigatorKey,
@@ -139,7 +138,7 @@ class AppRouter {
                             (context, state) =>
                                 Container(), //TODO change page (detailCourse)!
                       ),
-                    ]
+                    ],
                   ),
                 ],
               ),
