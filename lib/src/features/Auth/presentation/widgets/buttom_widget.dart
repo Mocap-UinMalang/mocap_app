@@ -3,7 +3,17 @@ import 'package:flutter/material.dart';
 class ButtomWidget extends StatelessWidget {
   final double height;
   final double width;
-  const ButtomWidget({super.key, this.height = 60, this.width = 200});
+  final double borderRadius;
+  final double textSize;
+  final String text;
+  const ButtomWidget({
+    super.key,
+    this.height = 60,
+    this.width = 200,
+    this.borderRadius = 30,
+    this.textSize = 16,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +24,16 @@ class ButtomWidget extends StatelessWidget {
         height: height,
         decoration: BoxDecoration(
           color: Colors.blue,
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: Center(
           child: Text(
-            'LOGIN',
+            text,
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               letterSpacing: 2,
-              fontSize: 16,
+              fontSize: textSize,
             ),
           ),
         ),

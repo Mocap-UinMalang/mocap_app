@@ -13,16 +13,13 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    // return MaterialApp.router(
-    //   title: 'Mocap',
-    //   //TODO change theme later
-    //   theme: ThemeData(
-    //     colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    //   ),
-    //   routerConfig: AppRouter.router,
-    // );
-    return MaterialApp(
-      home: AuthPage(),
+    return MaterialApp.router(
+      title: 'Mocap',
+      //TODO change theme later
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      routerConfig: AppRouter.router,
     );
   }
 }
