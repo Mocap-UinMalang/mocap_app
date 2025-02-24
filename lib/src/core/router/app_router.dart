@@ -43,7 +43,7 @@ class AppRouter {
 
   static GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: AppRouteEnum.splashScreen.path,
+    initialLocation: AppRouteEnum.organizationStructure.path,
     routes: [
       /*
         example use of go_router:
