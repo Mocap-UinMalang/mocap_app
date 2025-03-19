@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mocap_app/src/core/router/app_route_enum.dart';
+import 'package:mocap_app/src/features/Auth/presentation/page/auth_page.dart';
 import 'package:mocap_app/src/features/Home/presentation/pages/home_page.dart';
 import 'package:mocap_app/src/features/Member/presentation/pages/member_page.dart';
 import 'package:mocap_app/src/shared/presentation/pages/navigation_page.dart';
+
 
 /*
 Example Use of Go_Router:
@@ -47,7 +49,7 @@ class AppRouter {
           parentNavigatorKey: _rootNavigatorKey, ** parent key, use _rootNavigatorKey, if page is not nested, if nested use _shellNavigator key instead, like _shellNavigatorHome **
           path: AppRouteEnum.login.name,  ** Route Path, use AppRouteEnum, add item in AppRouteEnum if neccessarily **
           builder: (context, state) => MyPage()
-        )        
+        )
       */
       GoRoute(
         parentNavigatorKey: _rootNavigatorKey,
@@ -68,7 +70,7 @@ class AppRouter {
         parentNavigatorKey: _rootNavigatorKey,
         path: AppRouteEnum.login.path,
         name: AppRouteEnum.login.name,
-        builder: (context, state) => Container(), //TODO Change Page (login)!
+        builder: (context, state) => AuthPage(), //TODO Change Page (login)!
       ),
       //Main Page
       StatefulShellRoute.indexedStack(
