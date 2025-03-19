@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mocap_app/src/core/router/app_router.dart';
 import 'package:mocap_app/src/core/utils/injections.dart';
+import 'package:mocap_app/src/features/Auth/presentation/page/auth_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
