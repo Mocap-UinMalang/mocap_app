@@ -5,10 +5,16 @@ Example:
 const String menuIcon = "assets/icons/menu_icon.svg";
 const String nextIcon = "assets/icons/next_icon.svg";
 */
+const String homeIcon = "assets/icons/home_icon.svg";
+const String postIcon = "assets/icons/post_icon.svg";
+const String profileIcon = "assets/icons/profile_icon.svg";
+const String organizationIcon = "assets/icons/organization_icon.svg";
+const String coursesIcon = "assets/icons/courses_icon.svg";
+const String groupChatIcon = "assets/icons/group_chat_icon.svg";
+const String membersIcon = "assets/icons/member_icon.svg";
+const String aboutIcon = "assets/icons/ic_about.svg";
+const String emailIcon = "assets/icons/ic_email.svg";
+const String instagramIcon = "assets/icons/ic_instagram.svg";
+const String linkedinIcon = "assets/icons/ic_linkedin.svg";
+const String logoutIcon = "assets/icons/ic_logout.svg";
 
-const String aboutIcon = "assets/Icons/ic_about.svg";
-const String emailIcon = "assets/Icons/ic_email.svg";
-const String instagramIcon = "assets/Icons/ic_instagram.svg";
-const String linkedinIcon = "assets/Icons/ic_linkedin.svg";
-const String logoutIcon = "assets/Icons/ic_logout.svg";
-const String profileIcon = "assets/Icons/ic_profile.svg";
