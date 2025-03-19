@@ -2,6 +2,8 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mocap_app/src/core/utils/constant/icons.dart';
+import 'package:mocap_app/src/features/Profile/widgets/ProfileMenu.dart';
+import 'package:mocap_app/src/features/Profile/widgets/SocialMedia.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -10,17 +12,21 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text("Profile")),
+        title: const Center(child: Text("Profile", style: TextStyle(fontWeight: FontWeight.bold))),
       ),
       body: Center(
           child: Column(
         children: [
-          const CircleAvatar(
-            radius: 75,
+          InkWell(onTap: () {
+            
+          },
+            child: const CircleAvatar(
+              radius: 75,
+            ),
           ),
           const Text(
             "\nBintang Syachriza Akbar",
-            style: TextStyle(fontSize: 18),
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 5),
           const Text(
@@ -30,7 +36,7 @@ class Profile extends StatelessWidget {
           const SizedBox(height: 5),
           const Text(
             "Sidoarjo",
-            style: TextStyle(fontSize: 14),
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Color(0xFF666969)),
           ),
           const SizedBox(height: 15),
           DottedBorder(
@@ -44,106 +50,23 @@ class Profile extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               width: 256,
               height: 92,
-              // decoration: BoxDecoration(
-              //   borderRadius: BorderRadius.circular(10),
-              //   // color: Colors.blue,
-              //   border:
-              //       Border.all(color: Colors.purple, style: BorderStyle),
-              // ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundColor: Color(0xFFEDFCF5),
-                    child: SvgPicture.asset(linkedinIcon),
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundColor: Color(0xFFEDFCF5),
-                    child: SvgPicture.asset(emailIcon),
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundColor: Color(0xFFEDFCF5),
-                    child: SvgPicture.asset(instagramIcon),
-                  ),
+                  SocialMedia(iconSvg: linkedinIcon,),
+                  SocialMedia(iconSvg: emailIcon,),
+                  SocialMedia(iconSvg: instagramIcon,),
                 ],
               ),
             ),
           ),
           const SizedBox(height: 25),
-          Container(
-            width: 320,
-            height: 56,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: const Color(0x5fff6f6f6),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  height: 56,
-                  width: 56,
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xFFEDFCF5),
-                  ),
-                  child: SvgPicture.asset(profileIcon),
-                ),
-                const Text("\t    Edit Profile"),
-              ],
-            ),
-          ),
+          ProfileMenu(aboutIcon: aboutIcon, aboutText: "Profile", color: Color(0xFFEDFCF5),),
           const SizedBox(height: 25),
-          Container(
-            width: 320,
-            height: 56,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: const Color(0xFFF6F6F6),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  height: 56,
-                  width: 56,
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xFFEDFCF5),
-                  ),
-                  child: SvgPicture.asset(aboutIcon),
-                ),
-                const Text("\t     About"),
-              ],
-            ),
-          ),
+          ProfileMenu(aboutIcon: "", aboutText:"About" , color: const Color(0xFFEDFCF5),),
           const SizedBox(height: 25),
-          Container(
-            width: 320,
-            height: 56,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: const Color(0xFFF6F6F6),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  height: 56,
-                  width: 56,
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xFFFCEDED),
-                  ),
-                  child: SvgPicture.asset(logoutIcon),
-                ),
-                const Text("\t    Logout"),
-              ],
-            ),
-          ),
+          ProfileMenu(aboutIcon: "", aboutText: "LogOut", color: const Color.fromARGB(255, 252, 237, 237),),
+           
         ],
       )),
     );
