@@ -5,4 +5,7 @@ Example:
 const String authIllustration = "assets/images/auth_illustration.png";
 const String noImage = "assets/images/no-image.jpg";
 */
+
+
+const String placeholderImage = "assets/images/Placeholder.png";
 const String meetingIllustration = "assets/images/Meeting.svg";
