@@ -7,4 +7,5 @@ const String noImage = "assets/images/no-image.jpg";
 */
 
 
-const String placeholderImage = "assets/Images/Placeholder.png";
+const String placeholderImage = "assets/images/Placeholder.png";
+const String meetingIllustration = "assets/images/Meeting.svg";
