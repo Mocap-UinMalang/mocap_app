@@ -12,3 +12,9 @@ const String organizationIcon = "assets/icons/organization_icon.svg";
 const String coursesIcon = "assets/icons/courses_icon.svg";
 const String groupChatIcon = "assets/icons/group_chat_icon.svg";
 const String membersIcon = "assets/icons/member_icon.svg";
+const String aboutIcon = "assets/icons/ic_about.svg";
+const String emailIcon = "assets/icons/ic_email.svg";
+const String instagramIcon = "assets/icons/ic_instagram.svg";
+const String linkedinIcon = "assets/icons/ic_linkedin.svg";
+const String logoutIcon = "assets/icons/ic_logout.svg";
+
