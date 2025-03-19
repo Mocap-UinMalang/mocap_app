@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mocap_app/src/features/Organization/presentation/widgets/organization_item.dart';
 
 import '../../../../core/utils/constant/images.dart';
 
@@ -54,20 +55,7 @@ class OrganizationPage extends StatelessWidget {
                   mainAxisSpacing: 10,
                 ),
                 itemBuilder: (context, index) {
-                  return InkWell(
-                    onTap: () {
-                    },
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage(placeholderImage),
-                        ),
-                        Text("Name",style: TextStyle(fontWeight: FontWeight.bold),),
-                        Text("Position"),
-                      ],
-                    ),
-                  );
+                  return OrganizationItem(name: 'Agus $index', position: 'lead $index',);
                 },
               ),
             ),
