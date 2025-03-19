@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:lucide_icons/lucide_icons.dart';
+
+import '../Widget/social_icon.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 
 
 class DetailMemberPage extends StatelessWidget {
@@ -70,11 +72,17 @@ class DetailMemberPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      IconButton(onPressed: null, icon: Icon(Icons.favorite),),
+                     SocialIcon(
+                        icon: LucideIcons.linkedin,
+                      ),
                       SizedBox(width: 20,),
-                      IconButton(onPressed: null, icon: Icon(Icons.favorite),),
+                      SocialIcon(
+                        icon: LucideIcons.mail,
+                      ),
                       SizedBox(width: 20,),
-                      IconButton(onPressed: null, icon: Icon(Icons.favorite),),
+                      SocialIcon(
+                        icon: LucideIcons.instagram,
+                      ),
                     ],),
                 ],
               ),
