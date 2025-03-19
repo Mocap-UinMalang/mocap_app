@@ -14,10 +14,11 @@ class DetailMemberPage extends StatelessWidget {
         children: [
           Stack(
             children: [Container(
-              height: 300,
+              height: 420,
+              width: 420,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image:NetworkImage("https://koreanindo.net/wp-content/uploads/2023/05/Giselle-2-3-scaled.jpeg"),
+                  image:AssetImage("assets/images/background.jpg"),
                   fit: BoxFit.cover,
                 )
               ),
@@ -37,17 +38,17 @@ class DetailMemberPage extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Angelina",
                     style: TextStyle(
-                      fontSize: 24, 
+                      fontSize: 28, 
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 4),
+                  SizedBox(height: 5),
                   Text("Angkatan 21",
                     style: TextStyle(
                       fontSize: 16,
@@ -68,7 +69,7 @@ class DetailMemberPage extends StatelessWidget {
                       color: Colors.grey
                     ),
                   ),
-                  Spacer(),
+                  SizedBox(height: 200),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
