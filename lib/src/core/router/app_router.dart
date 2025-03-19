@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mocap_app/src/core/router/app_route_enum.dart';
+import 'package:mocap_app/src/features/Profile/Page/profile.dart';
 import 'package:mocap_app/src/shared/presentation/pages/navigation_page.dart';
 
 /*
@@ -178,7 +179,7 @@ class AppRouter {
                 parentNavigatorKey: _shellNavigatorProfile,
                 path: AppRouteEnum.profile.path,
                 name: AppRouteEnum.profile.name,
-                builder: (context, state) => Container(),
+                builder: (context, state) => Profile(),
                 //TODO Change Page (profile)!
                 routes: [
                   GoRoute(
