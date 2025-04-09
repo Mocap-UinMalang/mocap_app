@@ -4,7 +4,7 @@ import 'package:mocap_app/src/core/router/app_route_enum.dart';
 import 'package:mocap_app/src/features/Home/presentation/pages/home_page.dart';
 import 'package:mocap_app/src/features/Member/presentation/pages/member_page.dart';
 import 'package:mocap_app/src/shared/presentation/pages/navigation_page.dart';
-import 'package:mocap_app/src/features/DetailMember/Page/detail_member_page.dart';
+import 'package:mocap_app/src/features/DetailMember/presentation/pages/detail_member_page.dart';
 
 
 /*
@@ -41,7 +41,8 @@ class AppRouter {
 
   static GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: AppRouteEnum.home.path + AppRouteEnum.member.path + AppRouteEnum.detailMember.path,
+    // initialLocation: AppRouteEnum.home.path + AppRouteEnum.member.path + AppRouteEnum.detailMember.path,
+    initialLocation: AppRouteEnum.splashScreen.path,
     routes: [
       /*
         example use of go_router:
